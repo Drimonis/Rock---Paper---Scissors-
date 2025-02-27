@@ -1,7 +1,3 @@
-
-
-
-
 // COMPUTER CHOICE
 function getComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3);
@@ -43,8 +39,6 @@ function getHumanChoice() {
 //SINGLE ROUND
 
 // Play 5 Rounds
-
-
 
 function playGame() {
   let humanScore = 0;
@@ -101,7 +95,9 @@ function playGame() {
   playRound(humanChoice5, computerChoice5);
 
   // Final Scores
-  console.log(`Final Scores - Human: ${humanScore}, Computer: ${computerScore}`);
+  console.log(
+    `Final Scores - Human: ${humanScore}, Computer: ${computerScore}`
+  );
   if (humanScore > computerScore) {
     console.log("You win the game!");
   } else if (computerScore > humanScore) {
